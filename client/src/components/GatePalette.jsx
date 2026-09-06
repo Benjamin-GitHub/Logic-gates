@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { FaAnd, FaOr, FaNot } from "react-icons/fa";
 import { useDrag } from "react-dnd";
 
 const Palette = styled.div`
@@ -20,9 +19,9 @@ const Gate = styled.div`
 `;
 
 const gates = [
-  { id: "and", name: "AND Gate", icon: <FaAnd /> },
-  { id: "or", name: "OR Gate", icon: <FaOr /> },
-  { id: "not", name: "NOT Gate", icon: <FaNot /> },
+  { id: "and", name: "AND Gate", icon: <span aria-hidden="true">∧</span> },
+  { id: "or", name: "OR Gate", icon: <span aria-hidden="true">∨</span> },
+  { id: "not", name: "NOT Gate", icon: <span aria-hidden="true">¬</span> },
 ];
 
 export function GatePalette() {

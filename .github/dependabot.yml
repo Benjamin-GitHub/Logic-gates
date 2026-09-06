@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directories:
+      - /
+      - /client
+    schedule:
+      interval: weekly
+    groups:
+      security-updates:
+        applies-to: security-updates
+        patterns: ['*']
+      routine-updates:
+        applies-to: version-updates
+        update-types: [minor, patch]
+    open-pull-requests-limit: 5
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

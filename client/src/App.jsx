@@ -1,4 +1,6 @@
 import React from "react";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 import CircuitBuilder from "./components/CircuitBuilder";
 import { Container, Typography } from "@mui/material";
 
@@ -8,7 +10,9 @@ function App() {
       <Typography variant="h4" gutterBottom>
         Logic Gate Simulator
       </Typography>
-      <CircuitBuilder />
+      <DndProvider backend={HTML5Backend}>
+        <CircuitBuilder />
+      </DndProvider>
     </Container>
   );
 }

@@ -4,13 +4,13 @@
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@mui/material": "^6.4.2",
-    "react": "^19.0.0",
+    "react": "^19.3.0",
     "react-dnd": "^16.0.1",
     "react-dnd-html5-backend": "^16.0.1",
-    "react-dom": "^19.0.0",
-    "react-icons": "^5.4.0",
+    "react-dom": "^19.3.0",
+    "react-icons": "^5.7.0",
     "styled-components": "^6.1.14"
   },
   "engines": {
@@ -37,12 +37,12 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/dom": "^10.4.1",
+    "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
     "@vitejs/plugin-react": "^6.1.1",
     "jsdom": "^30.0.1",
-    "vite": "^8.2.2",
+    "vite": "^8.3.0",
     "vitest": "^5.0.0"
   }
 }
